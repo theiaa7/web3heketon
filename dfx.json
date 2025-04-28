@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "web3heketon_backend": {
+      "main": "src/web3heketon_backend/main.mo",
+      "type": "motoko"
+    },
+    "web3heketon_frontend": {
+      "dependencies": [
+        "web3heketon_backend"
+      ],
+      "source": [
+        "src/web3heketon_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "web3heketon_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
